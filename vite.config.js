@@ -10,5 +10,5 @@ export default defineConfig({
     },
   },
   // Remover o base ou usar a raiz "/"
-  base: '/',
+  
 });
