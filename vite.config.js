@@ -1,17 +1,14 @@
-import { defineConfig } from 'vite';
-
+// vite.config.js
 export default defineConfig({
-  root: 'src/frontend', // Configura o diretório de entrada para o frontend
   build: {
-    outDir: '../dist', // Saída para o diretório 'dist' na raiz
-    emptyOutDir: true, // Limpa a pasta de saída antes de gerar os novos arquivos
+    outDir: 'dist',
+    emptyOutDir: true,
   },
   css: {
     modules: {
-      localsConvention: 'camelCase', // Geração de classes CSS com camelCase
+      localsConvention: 'camelCase',
     },
   },
-  server: {
-    port: 3000, // Porta para o servidor de desenvolvimento
-  },
+  // Remover o base ou usar a raiz "/"
+  base: '/',
 });
